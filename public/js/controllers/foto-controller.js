@@ -20,7 +20,7 @@ angular.module('alurapic').controller('FotoController', function($scope, recurso
                 .then(function(dados) {
                     $scope.mensagem = dados.mensagem;
                     if (dados.inclusao) $scope.foto = {};
-                    $scope.$broadcast('fotoCadastrada');
+                    //$scope.$broadcast('fotoCadastrada');
                 })
                 .catch(function(erro) {
                     $scope.mensagem = erro.mensagem;
